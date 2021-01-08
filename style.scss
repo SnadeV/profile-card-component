@@ -1,0 +1,135 @@
+// Colors
+
+$primary-dark-cyan: hsl(185, 75%, 39%);
+$primary-desaturated-blue: hsl(229, 23%, 23%);
+$primary-grayish-blue: hsl(227, 10%, 46%);
+
+$neutral-dark-gray: hsl(0, 0%, 59%);
+
+// Style
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+
+  background-color: $primary-dark-cyan;
+  background-position: right 45vw top -120vh, 48vw 50vh;
+  background-size: 180vh;
+  background-repeat: no-repeat;
+  background-image:
+          url("images/bg-pattern-top.svg"),
+          url("images/bg-pattern-bottom.svg");
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 28px);
+}
+
+.card {
+  display: flex;
+  overflow: hidden;
+  width: 320px;
+  flex-direction: column;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 50px 0 rgba(0,0,0,0.3);
+}
+
+.card-header {
+  position: relative;
+  height: 130px;
+  background-image: url("images/bg-pattern-card.svg");
+}
+
+.card-body {
+  padding: 70px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-title {
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header img {
+  bottom: -50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid white;
+}
+
+.profile-title span:first-child {
+  font-weight: 700;
+  font-size: 18px;
+  color: $primary-desaturated-blue;
+}
+
+.profile-title span:last-child {
+  font-weight: 400;
+  padding-left: 10px;
+  color: $primary-grayish-blue;
+}
+
+.profile-description {
+  font-weight: 400;
+  font-size: 14px;
+  color: $primary-grayish-blue;
+}
+
+.card-footer {
+  border-top: 1px solid #ebebeb;
+}
+
+.card-footer ul {
+  display: flex;
+  padding: 0 10px 0 10px;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.card-footer li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.card-footer li span:first-child {
+  font-weight: 700;
+  font-size: 18px;
+  color: $primary-desaturated-blue;
+}
+
+.card-footer li span:last-child {
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 10px;
+  color: $primary-grayish-blue;
+}
+
+footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
